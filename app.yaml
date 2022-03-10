@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: voting-app
+  name: voting
 spec:
   destination:
-    name: kubernetes
+    name: ''
     namespace: default
     server: 'https://kubernetes.default.svc'
   source:
     path: ./
-    repoURL: 'https://github.com/Dev-Rohitb/knative-voting_app'
+    repoURL: 'https://github.com/Dev-Rohitb/knative-voting_app.git'
     targetRevision: HEAD
-  project: default
+  project: Voting-app
   syncPolicy:
     automated:
       prune: true
