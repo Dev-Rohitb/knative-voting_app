@@ -11,7 +11,7 @@ spec:
     path: ./
     repoURL: 'https://github.com/Dev-Rohitb/knative-voting_app.git'
     targetRevision: HEAD
-  project: Voting-app
+  project: default
   syncPolicy:
     automated:
       prune: true
